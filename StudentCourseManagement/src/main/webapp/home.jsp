@@ -4,10 +4,85 @@
 <head>
 <meta charset="UTF-8">
 <title>Jfsd Demo - Home</title>
-<link rel="stylesheet" type="text/css" href="style.css"/>
-</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
-    /* Main container for the recommended topics */
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://wpschoolpress.com/wp-content/uploads/2023/05/school-manag.png');
+        
+    }
+    .banner {
+        text-align: center;
+        padding: 50px 0;
+        background-color: #f8f9fa;
+        margin-bottom: 30px;
+    }
+    .banner h2 {
+        font-size: 36px;
+        font-weight: bold;
+    }
+    .banner p {
+        font-size: 18px;
+    }
+    .banner .btn-primary {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    .container h3 {
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+  .card {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+    .card h4 {
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .card p {
+        color: #666;
+    }
+    blockquote {
+        font-size: 16px;
+        font-style: italic;
+        color: #555;
+        margin: 20px 0;
+    }
+    footer {
+        font-size: 14px;
+        color: #888;
+    }
+    .call-to-action {
+        background-color: #e9ecef;
+        text-align: center;
+        padding: 40px;
+        margin-top: 40px;
+        border-radius: 8px;
+    }
+    .call-to-action h3 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .call-to-action p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .call-to-action .btn {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+     /* Main container for the recommended topics */
     .recommended-topics {
         background-color: #f8f9fa;
         padding: 30px 0;
@@ -90,11 +165,13 @@
         vertical-align: middle;
     }
 </style>
+</head>
 <body>
+
 <%@include file="mainnavbar.jsp" %>
 
 <div class="container banner">
-    <h2>Welcome to the Student Course Management System</h2>
+    <h2>Welcome to the Online Course Management System</h2>
     <p>Your one-stop solution for managing your courses efficiently.</p>
     <button class="btn btn-primary">Get Started</button>
 </div>
@@ -158,13 +235,12 @@
 </div>
 
 <!-- Call to Action Section -->
-<div class="container">
+<div class="container call-to-action">
     <h3>Ready to Start?</h3>
     <p>Join us today and simplify your course management experience.</p>
     <button class="btn btn-success" onclick="window.location.href='/studentreg'">Register Now</button>
     <button class="btn btn-info" onclick="window.location.href='/studentlogin'">Login</button>
 </div>
-
 <!-- Recommended Topics Section -->
 <div class="recommended-topics">
     <h2>Topics recommended for you</h2>
@@ -185,7 +261,7 @@
 <!-- Teach Online Section -->
 <div class="teach-online-section">
     <h3>Teach the world online</h3>
-    <p>Create an online video course, reach students across the globe, and earn money</p>
+    <p>Create an online video course, reach students across the globe, and earn money</p><br>
     <a href="#" class="teach-online-button">Teach on This Platform</a>
 </div>
 

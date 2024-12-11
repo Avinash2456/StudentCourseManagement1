@@ -11,7 +11,7 @@
 	<groupId>com.example.demo.springboot</groupId>
 	<artifactId>StudentCourseManagement</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>StudentCourseManagement</name>
 	<description>Spring Boot Project For The Student Course Management System</description>
 	<url/>

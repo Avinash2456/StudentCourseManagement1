@@ -12,7 +12,10 @@ import com.example.demo.model.Student;
 public interface StudentRepository extends JpaRepository<Student,Integer>
 {
 	
-	@Query("select c from Student c where c.email=?1 and c.password=?2 ")
-	public Student checkStudentLogin(String email, String password);
+	 Student findByEmailAndContact(String email, String contact);
+	  
+	  @Query("select s from Student s where s.email=?1 and s.password=?2 ")
+	  public Student checkStudentLogin(String email,String password);
 
+	  Student findByEmail(String email);
 }

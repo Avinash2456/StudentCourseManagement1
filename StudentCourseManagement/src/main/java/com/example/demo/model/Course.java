@@ -1,6 +1,7 @@
 package com.example.demo.model;
 
 import jakarta.persistence.Column;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -24,18 +25,15 @@ public class Course {
     @Column(name = "course_des", length = 105, nullable = false)
     private String description;
 
-    // Default constructor required by JPA
     public Course() {
     }
 
-    // Parameterized constructor
     public Course(String name, String code, String description) {
         this.name = name;
         this.code = code;
         this.description = description;
     }
 
-    // Getters and setters
     public Long getId() {
         return id;
     }
